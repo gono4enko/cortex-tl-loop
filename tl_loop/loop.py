@@ -88,7 +88,15 @@ async def tick() -> TickResult:
                 result.decisions_made += 1
 
         # 2. Stuck -> council + recovery
-        for task in get_stuck_tasks(5):
+        stuck_tasks = get_stuck_tasks(5)
+        if stuck_tasks:
+            # Notify TL about orphaned tasks  # ponytail: notify via email, Hermes reads too
+            from cortex.lib.email import send_email
+            stuck_summary = chr(10).join(f"- {t.id[:20]}: {t.title[:80]} ({t.status})" for t in stuck_tasks)
+            try:
+                send_email(subject=f"Cortex: {len(stuck_tasks)} stuck tasks", body=stuck_summary)
+            except: pass
+        for task in stuck_tasks:
             result.tasks_seen += 1
             transition(task.id, TaskStatus.STUCK)
             # Expert council for stuck tasks
