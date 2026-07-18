@@ -1,0 +1,34 @@
+sources:
+  github:
+    - repo: "sst/opencode"
+    - repo: "langchain-ai/langgraph"
+    - repo: "microsoft/autogen"
+    - repo: "All-Hands-AI/OpenHands"
+    - repo: "firecrawl/firecrawl"
+    - repo: "punkpeye/awesome-mcp-servers"
+  reddit:
+    - sub: "LocalLLaMA"
+    - sub: "AI_Agents"
+    - sub: "ChatGPTCoding"
+    - sub: "selfhosted"
+    - sub: "MachineLearning"
+  huggingface:
+    filter: "text-generation"
+    sort: "downloads"
+    top: 20
+  openrouter:
+    endpoint: "https://openrouter.ai/api/v1/models"
+    check: weekly
+  arxiv:
+    categories:
+      - "cs.SE"
+      - "cs.MA"
+      - "cs.AI"
+    keywords:
+      - "multi-agent"
+      - "code generation"
+      - "agent orchestration"
+      - "autonomous development"
+schedule:
+  daily: "06:00 UTC"
+  weekly: "Sunday 18:00 MSK"

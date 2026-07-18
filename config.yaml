@@ -1,0 +1,111 @@
+# Hermes Cortex Configuration
+# NO SECRETS HERE — secrets in .env
+
+server:
+  host: "0.0.0.0"
+  port: 9015
+  workers: 1
+
+database:
+  path: "/home/hermes/cortex/cortex.db"
+  wal_mode: true
+
+kanban:
+  url: "http://localhost:9011"
+  timeout_sec: 10
+
+agents:
+  mac_opencode:
+    type: mac
+    host: "andrey-mac"
+    max_concurrent: 2
+    heavy_tasks: true
+  mac_kilo:
+    type: mac
+    host: "andrey-mac"
+    max_concurrent: 2
+    surgical_tasks: true
+  kilo_hermes:
+    type: vps
+    host: "localhost"
+    max_concurrent: 1
+    ram_limit_mb: 1500
+  hermes_opencode:
+    type: vps
+    host: "localhost"
+    max_concurrent: 1
+    ram_limit_mb: 1500
+  hermes_bot:
+    type: vps
+    host: "localhost"
+    max_concurrent: 1
+    ram_limit_mb: 800
+
+models:
+  team_lead:
+    id: "zai-org/GLM-5.2"
+    provider: "openrouter"
+    max_tokens: 4096
+    temperature: 0.3
+  wave_planner:
+    id: "deepseek-chat"
+    provider: "deepseek"
+    max_tokens: 8192
+  executor_heavy:
+    id: "Qwen/Qwen3-Coder-480B"
+    provider: "deepinfra"
+    max_tokens: 8192
+  executor_light:
+    id: "Qwen/Qwen3-Coder-235B-A22B"
+    provider: "deepinfra"
+    max_tokens: 4096
+  reviewer_t1:
+    id: "deepseek-v4-flash"
+    provider: "deepinfra"
+    max_tokens: 2048
+  reviewer_t2:
+    id: "Qwen/Qwen3-235B-A22B"
+    provider: "deepinfra"
+    max_tokens: 4096
+  kb_writer:
+    id: "deepseek-chat"
+    provider: "deepseek"
+    max_tokens: 2048
+  research:
+    id: "zai-org/GLM-5.2"
+    provider: "openrouter"
+    max_tokens: 4096
+  digest_reporter:
+    id: "deepseek-chat"
+    provider: "deepseek"
+    max_tokens: 2048
+
+limits:
+  daily_cost_usd: 20
+  max_concurrent_waves: 2
+  max_retries_per_task: 3
+  task_timeout_minutes: 30
+
+watchdog:
+  heartbeat_interval_sec: 60
+  stale_timeout_sec: 180
+  ram_warning_percent: 85
+  ram_critical_percent: 92
+
+review:
+  t1_checklist_size: 10
+  t2_trigger_complexity: "high"
+  t2_trigger_paths:
+    - "erp/**"
+    - "graph/**"
+    - ".env"
+    - "package.json"
+    - "ecosystem.config.js"
+
+firewall_egress:
+  - "api.openrouter.ai"
+  - "api.deepseek.com"
+  - "api.deepinfra.com"
+  - "smtp.beget.com"
+  - "api.firecrawl.dev"
+  - "api.telegram.org"

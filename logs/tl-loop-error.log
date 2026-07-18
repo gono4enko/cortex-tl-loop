@@ -1,0 +1,1026 @@
+2026-07-18 19:14:23: 2026-07-18 19:14:23,742 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:14:28: Traceback (most recent call last):
+2026-07-18 19:14:28:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:14:28:     asyncio.run(main())
+2026-07-18 19:14:28:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:14:28:     return runner.run(main)
+2026-07-18 19:14:28:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:14:28:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:14:28:     return self._loop.run_until_complete(task)
+2026-07-18 19:14:28: ^
+2026-07-18 19:14:28:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:14:28:     return future.result()
+2026-07-18 19:14:28: 
+2026-07-18 19:14:28: ^^
+2026-07-18 19:14:28:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:14:28:     await run_forever(INTERVAL)
+2026-07-18 19:14:28:   File "/home/hermes/cortex/tl_loop/loop.py", line 95, in run_forever
+2026-07-18 19:14:28: bootstrap_db()
+2026-07-18 19:14:28:   File "/home/hermes/cortex/tl_loop/state_store.py", line 71, in bootstrap_db
+2026-07-18 19:14:28:     db.execute("""CREATE TABLE IF NOT EXISTS events (
+2026-07-18 19:14:28: sqlite3.OperationalError: database is locked
+2026-07-18 19:14:38: 2026-07-18 19:14:38,882 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:14:43: Traceback (most recent call last):
+2026-07-18 19:14:43:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:14:43:     asyncio.run(main())
+2026-07-18 19:14:43:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:14:43:     return runner.run(main)
+2026-07-18 19:14:43: ^^^^^^^
+2026-07-18 19:14:43:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:14:43:     return self._loop.run_until_complete(task)
+2026-07-18 19:14:43: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:14:43:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:14:43:     return future.result()
+2026-07-18 19:14:43: ^^
+2026-07-18 19:14:43:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:14:43:     await run_forever(INTERVAL)
+2026-07-18 19:14:43:   File "/home/hermes/cortex/tl_loop/loop.py", line 95, in run_forever
+2026-07-18 19:14:43:     bootstrap_db()
+2026-07-18 19:14:43:   File "/home/hermes/cortex/tl_loop/state_store.py", line 71, in bootstrap_db
+2026-07-18 19:14:43:     db.execute("""CREATE TABLE IF NOT EXISTS events (
+2026-07-18 19:14:43: sqlite3.OperationalError: database is locked
+2026-07-18 19:14:54: 2026-07-18 19:14:54,012 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:14:59: Traceback (most recent call last):
+2026-07-18 19:14:59:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:14:59:     asyncio.run(main())
+2026-07-18 19:14:59:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:14:59:     return runner.run(main)
+2026-07-18 19:14:59:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:14:59:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:14:59:     return self._loop.run_until_complete(task)
+2026-07-18 19:14:59:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:14:59:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:14:59:     return future.result()
+2026-07-18 19:14:59: ^^^^
+2026-07-18 19:14:59:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:14:59:     await run_forever(INTERVAL)
+2026-07-18 19:14:59:   File "/home/hermes/cortex/tl_loop/loop.py", line 95, in run_forever
+2026-07-18 19:14:59:     bootstrap_db()
+2026-07-18 19:14:59:   File "/home/hermes/cortex/tl_loop/state_store.py", line 71, in bootstrap_db
+2026-07-18 19:14:59:     db.execute("""CREATE TABLE IF NOT EXISTS events (
+2026-07-18 19:14:59: sqlite3.OperationalError: database is locked
+2026-07-18 19:15:09: Traceback (most recent call last):
+2026-07-18 19:15:09:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:09:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:09:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:09:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:09:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:09:     db = get_db()
+2026-07-18 19:15:09:     ^
+2026-07-18 19:15:09: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:15:19: Traceback (most recent call last):
+2026-07-18 19:15:19:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:19:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:19:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:19:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:19:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:19:     db = get_db()
+2026-07-18 19:15:19:     ^
+2026-07-18 19:15:19: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:15:29: Traceback (most recent call last):
+2026-07-18 19:15:29:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:29:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:29:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:29:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:29:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:29:     db = get_db()
+2026-07-18 19:15:29:     ^
+2026-07-18 19:15:29: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:15:37: Traceback (most recent call last):
+2026-07-18 19:15:37:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:37:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:37:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:37:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:37:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:37:     db = get_db()
+2026-07-18 19:15:37:     ^
+2026-07-18 19:15:37: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:15:47: Traceback (most recent call last):
+2026-07-18 19:15:47:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:47:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:47:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:47:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:47:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:47:     db = get_db()
+2026-07-18 19:15:47:     ^
+2026-07-18 19:15:47: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:15:57: Traceback (most recent call last):
+2026-07-18 19:15:57:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:15:57:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:15:57:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:15:57:     from cortex.tl_loop.state_store import (
+2026-07-18 19:15:57:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:15:57:     db = get_db()
+2026-07-18 19:15:57:     ^
+2026-07-18 19:15:57: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:16:07: Traceback (most recent call last):
+2026-07-18 19:16:07:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:16:07:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:16:07:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:16:07:     from cortex.tl_loop.state_store import (
+2026-07-18 19:16:07:   File "/home/hermes/cortex/tl_loop/state_store.py", line 73
+2026-07-18 19:16:07:     db = get_db()
+2026-07-18 19:16:07:     ^
+2026-07-18 19:16:07: IndentationError: expected an indented block after 'try' statement on line 72
+2026-07-18 19:16:17: 2026-07-18 19:16:17,904 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:16:26: 2026-07-18 19:16:26,504 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:16:36: 2026-07-18 19:16:36,523 [tl-loop] WARNING: Bootstrap attempt 1: database is locked
+2026-07-18 19:16:47: 2026-07-18 19:16:47,540 [tl-loop] WARNING: Bootstrap attempt 2: database is locked
+2026-07-18 19:16:59: 2026-07-18 19:16:59,555 [tl-loop] WARNING: Bootstrap attempt 3: database is locked
+2026-07-18 19:17:11: 2026-07-18 19:17:11,680 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:17:21: 2026-07-18 19:17:21,697 [tl-loop] WARNING: Bootstrap attempt 1: database is locked
+2026-07-18 19:17:32: 2026-07-18 19:17:32,715 [tl-loop] WARNING: Bootstrap attempt 2: database is locked
+2026-07-18 19:17:44: 2026-07-18 19:17:44,732 [tl-loop] WARNING: Bootstrap attempt 3: database is locked
+2026-07-18 19:17:58: 2026-07-18 19:17:58,748 [tl-loop] WARNING: Bootstrap attempt 4: database is locked
+2026-07-18 19:18:16: 2026-07-18 19:18:16,767 [tl-loop] WARNING: Bootstrap attempt 5: database is locked
+2026-07-18 19:18:32: 2026-07-18 19:18:32,767 [tl-loop] INFO: TL Loop started (interval=300s)
+2026-07-18 19:18:32: 2026-07-18 19:18:32,768 [tl-loop] ERROR: Loop error
+2026-07-18 19:18:32: Traceback (most recent call last):
+2026-07-18 19:18:32:   File "/home/hermes/cortex/tl_loop/loop.py", line 99, in run_forever
+2026-07-18 19:18:32:     await tick()
+2026-07-18 19:18:32:   File "/home/hermes/cortex/tl_loop/loop.py", line 87, in tick
+2026-07-18 19:18:32:     log_event("SYSTEM", EventType.TICK_RUN, {
+2026-07-18 19:18:32:   File "/home/hermes/cortex/tl_loop/state_store.py", line 25, in log_event
+2026-07-18 19:18:32:     execute("INSERT INTO events (id, task_id, type, payload, ts) VALUES (?,?,?,?,?)",
+2026-07-18 19:18:32:   File "/home/hermes/cortex/lib/db.py", line 41, in execute
+2026-07-18 19:18:32:     conn.execute(sql, params)
+2026-07-18 19:18:32: sqlite3.OperationalError: no such table: events
+2026-07-18 19:18:38: Traceback (most recent call last):
+2026-07-18 19:18:38:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:18:38:     return self._loop.run_until_complete(task)
+2026-07-18 19:18:38:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:18:38:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:18:38:     return future.result()
+2026-07-18 19:18:38:            ^^^^^^^^^^^^^^^
+2026-07-18 19:18:38:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:18:38:     await run_forever(INTERVAL)
+2026-07-18 19:18:38:   File "/home/hermes/cortex/tl_loop/loop.py", line 102, in run_forever
+2026-07-18 19:18:38:     await asyncio.sleep(interval)
+2026-07-18 19:18:38:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:18:38:     return await future
+2026-07-18 19:18:38:            ^^^^^^^^^^^^
+2026-07-18 19:18:38: asyncio.exceptions.CancelledError
+2026-07-18 19:18:38: 
+2026-07-18 19:18:38: During handling of the above exception, another exception occurred:
+2026-07-18 19:18:38: 
+2026-07-18 19:18:38: Traceback (most recent call last):
+2026-07-18 19:18:38:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:18:38:     asyncio.run(main())
+2026-07-18 19:18:38:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:18:38:     return runner.run(main)
+2026-07-18 19:18:38:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:18:38:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:18:38:     raise KeyboardInterrupt()
+2026-07-18 19:18:38: KeyboardInterrupt
+2026-07-18 19:22:12: 2026-07-18 19:22:12,860 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:22:22: 2026-07-18 19:22:22,877 [tl-loop] WARNING: Bootstrap attempt 1: database is locked
+2026-07-18 19:22:33: 2026-07-18 19:22:33,895 [tl-loop] WARNING: Bootstrap attempt 2: database is locked
+2026-07-18 19:23:56: Traceback (most recent call last):
+2026-07-18 19:23:56:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:23:56:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:23:56:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:23:56:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:23:56:   File "/home/hermes/cortex/tl_loop/rules.py", line 5, in <module>
+2026-07-18 19:23:56:     from cortex.tl_loop.state_store import (
+2026-07-18 19:23:56: ImportError: cannot import name 'get_daily_cost' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:24:06: Traceback (most recent call last):
+2026-07-18 19:24:06:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:06:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:24:06:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:24:06:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:24:06:   File "/home/hermes/cortex/tl_loop/rules.py", line 5, in <module>
+2026-07-18 19:24:06:     from cortex.tl_loop.state_store import (
+2026-07-18 19:24:06: ImportError: cannot import name 'get_daily_cost' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:24:16: Traceback (most recent call last):
+2026-07-18 19:24:16:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:16:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:24:16:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:24:16:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:24:16:   File "/home/hermes/cortex/tl_loop/rules.py", line 5, in <module>
+2026-07-18 19:24:16:     from cortex.tl_loop.state_store import (
+2026-07-18 19:24:16: ImportError: cannot import name 'get_daily_cost' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:24:26: Traceback (most recent call last):
+2026-07-18 19:24:26:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:26: 
+2026-07-18 19:24:26:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:24:26:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:24:26:   File "/home/hermes/cortex/tl_loop/rules.py", line 5, in <module>
+2026-07-18 19:24:26:     from cortex.tl_loop.state_store import (
+2026-07-18 19:24:26: ImportError: cannot import name 'get_daily_cost' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:24:36: Traceback (most recent call last):
+2026-07-18 19:24:36:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:36:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:24:36:   File "/home/hermes/cortex/tl_loop/loop.py", line 6, in <module>
+2026-07-18 19:24:36:     from cortex.tl_loop.state_store import (
+2026-07-18 19:24:36: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:24:46: Traceback (most recent call last):
+2026-07-18 19:24:46:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:46:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:24:46:   File "/home/hermes/cortex/tl_loop/loop.py", line 24
+2026-07-18 19:24:46:     log_event("SYSTEM", .ERROR, {"kill_switch": ks.reason})
+2026-07-18 19:24:46:                         ^
+2026-07-18 19:24:46: SyntaxError: invalid syntax
+2026-07-18 19:24:57: Traceback (most recent call last):
+2026-07-18 19:24:57:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:24:57:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:24:57:   File "/home/hermes/cortex/tl_loop/loop.py", line 24
+2026-07-18 19:24:57:     log_event("SYSTEM", .ERROR, {"kill_switch": ks.reason})
+2026-07-18 19:24:57:                         ^
+2026-07-18 19:24:57: SyntaxError: invalid syntax
+2026-07-18 19:25:07: Traceback (most recent call last):
+2026-07-18 19:25:07:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:25:07:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:25:07:   File "/home/hermes/cortex/tl_loop/loop.py", line 11, in <module>
+2026-07-18 19:25:07:     from cortex.tl_loop.verify_gate import run_verify
+2026-07-18 19:25:07:   File "/home/hermes/cortex/tl_loop/verify_gate.py", line 5, in <module>
+2026-07-18 19:25:07:     from cortex.tl_loop.state_store import transition, log_event, TaskStatus, EventType
+2026-07-18 19:25:07: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:25:13: Traceback (most recent call last):
+2026-07-18 19:25:13:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:25:13:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:25:13:   File "/home/hermes/cortex/tl_loop/loop.py", line 11, in <module>
+2026-07-18 19:25:13:     from cortex.tl_loop.verify_gate import run_verify
+2026-07-18 19:25:13:   File "/home/hermes/cortex/tl_loop/verify_gate.py", line 5, in <module>
+2026-07-18 19:25:13:     from cortex.tl_loop.state_store import transition, log_event, TaskStatus, EventType
+2026-07-18 19:25:13: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:25:23: Traceback (most recent call last):
+2026-07-18 19:25:23:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:25:23:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:25:23:   File "/home/hermes/cortex/tl_loop/loop.py", line 11, in <module>
+2026-07-18 19:25:23:     from cortex.tl_loop.verify_gate import run_verify
+2026-07-18 19:25:23:   File "/home/hermes/cortex/tl_loop/verify_gate.py", line 5, in <module>
+2026-07-18 19:25:23:     from cortex.tl_loop.state_store import transition, log_event, TaskStatus, EventType
+2026-07-18 19:25:23: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:25:33: Traceback (most recent call last):
+2026-07-18 19:25:33:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:25:33:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:25:33:   File "/home/hermes/cortex/tl_loop/loop.py", line 11, in <module>
+2026-07-18 19:25:33:     from cortex.tl_loop.verify_gate import run_verify
+2026-07-18 19:25:33:   File "/home/hermes/cortex/tl_loop/verify_gate.py", line 5, in <module>
+2026-07-18 19:25:33:     from cortex.tl_loop.state_store import transition, log_event, TaskStatus, EventType
+2026-07-18 19:25:33: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:25:43: Traceback (most recent call last):
+2026-07-18 19:25:43:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:25:43:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:25:43:   File "/home/hermes/cortex/tl_loop/loop.py", line 11, in <module>
+2026-07-18 19:25:43:     from cortex.tl_loop.verify_gate import run_verify
+2026-07-18 19:25:43:   File "/home/hermes/cortex/tl_loop/verify_gate.py", line 5, in <module>
+2026-07-18 19:25:43:     from cortex.tl_loop.state_store import transition, log_event, TaskStatus, EventType
+2026-07-18 19:25:43: ImportError: cannot import name 'EventType' from 'cortex.tl_loop.state_store' (/home/hermes/cortex/tl_loop/state_store.py)
+2026-07-18 19:25:54: 2026-07-18 19:25:54,043 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:25:54: 2026-07-18 19:25:54,043 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:25:54: 2026-07-18 19:25:54,043 [tl-loop] INFO: TL Loop started (interval=300s, tick #1)
+2026-07-18 19:25:54: 2026-07-18 19:25:54,044 [tl-loop] ERROR: Tick error: name 'get_daily_cost' is not defined
+2026-07-18 19:25:54: Traceback (most recent call last):
+2026-07-18 19:25:54:   File "/home/hermes/cortex/tl_loop/loop.py", line 18, in tick
+2026-07-18 19:25:54:     ks = kill_switch()
+2026-07-18 19:25:54:          ^^^^^^^^^^^^^
+2026-07-18 19:25:54:   File "/home/hermes/cortex/tl_loop/rules.py", line 18, in kill_switch
+2026-07-18 19:25:54:     cost = get_daily_cost()
+2026-07-18 19:25:54:            ^^^^^^^^^^^^^^
+2026-07-18 19:25:54: NameError: name 'get_daily_cost' is not defined
+2026-07-18 19:25:55: Traceback (most recent call last):
+2026-07-18 19:25:55:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:25:55:     return self._loop.run_until_complete(task)
+2026-07-18 19:25:55:            ^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:25:55: ^^^^^^^^^^^^^^
+2026-07-18 19:25:55:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:25:55:     return future.result()
+2026-07-18 19:25:55: ^^^^^^^^^^^
+2026-07-18 19:25:55:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:25:55:     await run_forever(INTERVAL)
+2026-07-18 19:25:55:   File "/home/hermes/cortex/tl_loop/loop.py", line 69, in run_forever
+2026-07-18 19:25:55:     await asyncio.sleep(interval)
+2026-07-18 19:25:55:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:25:55:     return await future
+2026-07-18 19:25:55:            ^^^^^^^^^^^^
+2026-07-18 19:25:55: .CancelledError
+2026-07-18 19:25:55: 
+2026-07-18 19:25:55: During handling of the above exception, another exception occurred:
+2026-07-18 19:25:55: 
+2026-07-18 19:25:55: Traceback (most recent call last):
+2026-07-18 19:25:55:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:25:55:     asyncio.run(main())
+2026-07-18 19:25:55:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:25:55:     return runner.run(main)
+2026-07-18 19:25:55: ^^^^^^^^^^^^^
+2026-07-18 19:25:55:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:25:55:     raise KeyboardInterrupt()
+2026-07-18 19:25:55: KeyboardInterrupt
+2026-07-18 19:25:56: 2026-07-18 19:25:56,133 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:25:56: 2026-07-18 19:25:56,134 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:25:56: 2026-07-18 19:25:56,134 [tl-loop] INFO: TL Loop started (interval=300s, tick #2)
+2026-07-18 19:25:56: 2026-07-18 19:25:56,134 [tl-loop] ERROR: Tick error: name 'get_daily_cost' is not defined
+2026-07-18 19:25:56: Traceback (most recent call last):
+2026-07-18 19:25:56:   File "/home/hermes/cortex/tl_loop/loop.py", line 18, in tick
+2026-07-18 19:25:56:     ks = kill_switch()
+2026-07-18 19:25:56:          ^^^^^^^^^^^^^
+2026-07-18 19:25:56:   File "/home/hermes/cortex/tl_loop/rules.py", line 18, in kill_switch
+2026-07-18 19:25:56:     cost = get_daily_cost()
+2026-07-18 19:25:56:            ^^^^^^^^^^^^^^
+2026-07-18 19:25:56: NameError: name 'get_daily_cost' is not defined
+2026-07-18 19:29:17: Traceback (most recent call last):
+2026-07-18 19:29:17:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:29:17:     return self._loop.run_until_complete(task)
+2026-07-18 19:29:17: ^^^^^^^^^^
+2026-07-18 19:29:17:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:29:17:     return future.result()
+2026-07-18 19:29:17: ^^^^^^
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:29:17:     await run_forever(INTERVAL)
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/loop.py", line 69, in run_forever
+2026-07-18 19:29:17: import time as _time
+2026-07-18 19:29:17: ^^^^^^^^^
+2026-07-18 19:29:17:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:29:17:     return await future
+2026-07-18 19:29:17:      ^^^^^^^^^^^^
+2026-07-18 19:29:17: asyncio.exceptions.CancelledError
+2026-07-18 19:29:17: 
+2026-07-18 19:29:17: During handling of the above exception, another exception occurred:
+2026-07-18 19:29:17: 
+2026-07-18 19:29:17: Traceback (most recent call last):
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:29:17:     asyncio.run(main())
+2026-07-18 19:29:17:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:29:17:     return runner.run(main)
+2026-07-18 19:29:17:    ^^^^^^^^^^^^^^^^
+2026-07-18 19:29:17:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:29:17:     raise KeyboardInterrupt()
+2026-07-18 19:29:17: KeyboardInterrupt
+2026-07-18 19:29:17: Traceback (most recent call last):
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:29:17:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:29:17: from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:29:17:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:29:17:     info = fid={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:29:17:                          ^^^^^
+2026-07-18 19:29:17: SyntaxError: invalid syntax
+2026-07-18 19:29:27: Traceback (most recent call last):
+2026-07-18 19:29:27:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:29:27:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:29:27:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:29:27:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:29:27:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:29:27:     info = fid={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:29:27:                          ^^^^^
+2026-07-18 19:29:27: SyntaxError: invalid syntax
+2026-07-18 19:29:38: Traceback (most recent call last):
+2026-07-18 19:29:38:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:29:38:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:29:38:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:29:38:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:29:38:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:29:38:     info = fid={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:29:38:                          ^^^^^
+2026-07-18 19:29:38: SyntaxError: invalid syntax
+2026-07-18 19:29:48: Traceback (most recent call last):
+2026-07-18 19:29:48:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:29:48:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:29:48:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:29:48:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:29:48:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:29:48:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:29:48:            ^
+2026-07-18 19:29:48: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:29:58: Traceback (most recent call last):
+2026-07-18 19:29:58:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:29:58:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:29:58:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:29:58:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:29:58:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:29:58:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:29:58:            ^
+2026-07-18 19:29:58: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:30:08: Traceback (most recent call last):
+2026-07-18 19:30:08:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:30:08:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:30:08:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:30:08:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:30:08:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:30:08:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:30:08:            ^
+2026-07-18 19:30:08: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:30:18: Traceback (most recent call last):
+2026-07-18 19:30:18:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:30:18:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:30:18:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:30:18:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:30:18:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:30:18:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:30:18:            ^
+2026-07-18 19:30:18: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:30:28: Traceback (most recent call last):
+2026-07-18 19:30:28:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:30:28:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:30:28:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:30:28:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:30:28:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:30:28:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:30:28:            ^
+2026-07-18 19:30:28: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:30:38: Traceback (most recent call last):
+2026-07-18 19:30:38:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:30:38:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:30:38:   File "/home/hermes/cortex/tl_loop/loop.py", line 10, in <module>
+2026-07-18 19:30:38:     from cortex.tl_loop.rules import apply_rules, kill_switch
+2026-07-18 19:30:38:   File "/home/hermes/cortex/tl_loop/rules.py", line 72
+2026-07-18 19:30:38:     info = f"id={task.id} title={task.title} status={task.status.value} priority={task.priority} agent={task.agent}
+2026-07-18 19:30:38:            ^
+2026-07-18 19:30:38: SyntaxError: unterminated f-string literal (detected at line 72)
+2026-07-18 19:30:49: 2026-07-18 19:30:49,172 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:30:49: 2026-07-18 19:30:49,174 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:30:49: 2026-07-18 19:30:49,174 [tl-loop] INFO: TL Loop started (interval=300s, tick #3)
+2026-07-18 19:30:50: Traceback (most recent call last):
+2026-07-18 19:30:50:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:30:50:     return self._loop.run_until_complete(task)
+2026-07-18 19:30:50: ^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:30:50:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:30:50:     return future.result()
+2026-07-18 19:30:50: ^^^^^^^^^^^^^
+2026-07-18 19:30:50:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:30:50:     await run_forever(INTERVAL)
+2026-07-18 19:30:50:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:30:50: 
+2026-07-18 19:30:50:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:30:50:     return await future
+2026-07-18 19:30:50:            ^^^^^^^^^^^^
+2026-07-18 19:30:50: asyncio.exceptions.CancelledError
+2026-07-18 19:30:50: 
+2026-07-18 19:30:50: During handling of the above exception, another exception occurred:
+2026-07-18 19:30:50: 
+2026-07-18 19:30:50: Traceback (most recent call last):
+2026-07-18 19:30:50:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:30:50:     asyncio.run(main())
+2026-07-18 19:30:50:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:30:50:     return runner.run(main)
+2026-07-18 19:30:50: ^^^^^^^^^^^^^^^^
+2026-07-18 19:30:50:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:30:50:     raise KeyboardInterrupt()
+2026-07-18 19:30:50: KeyboardInterrupt
+2026-07-18 19:30:51: 2026-07-18 19:30:51,537 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:30:51: 2026-07-18 19:30:51,538 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:30:51: 2026-07-18 19:30:51,538 [tl-loop] INFO: TL Loop started (interval=300s, tick #4)
+2026-07-18 19:33:44: Traceback (most recent call last):
+2026-07-18 19:33:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:33:44:     return self._loop.run_until_complete(task)
+2026-07-18 19:33:44:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:33:44:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:33:44:     return future.result()
+2026-07-18 19:33:44:            ^^^^^^^^^^^^^^^
+2026-07-18 19:33:44:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:33:44:     await run_forever(INTERVAL)
+2026-07-18 19:33:44:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:33:44:     await asyncio.sleep(interval)
+2026-07-18 19:33:44:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:33:44:     return await future
+2026-07-18 19:33:44: ^^^
+2026-07-18 19:33:44: asyncio.exceptions.CancelledError
+2026-07-18 19:33:44: 
+2026-07-18 19:33:44: During handling of the above exception, another exception occurred:
+2026-07-18 19:33:44: 
+2026-07-18 19:33:44: Traceback (most recent call last):
+2026-07-18 19:33:44:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:33:44:     asyncio.run(main())
+2026-07-18 19:33:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:33:44:     return runner.run(main)
+2026-07-18 19:33:44:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:33:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:33:44:     raise KeyboardInterrupt()
+2026-07-18 19:33:44: KeyboardInterrupt
+2026-07-18 19:33:44: 2026-07-18 19:33:44,739 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:33:44: 2026-07-18 19:33:44,740 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:33:44: 2026-07-18 19:33:44,740 [tl-loop] INFO: TL Loop started (interval=300s, tick #5)
+2026-07-18 19:33:44: 2026-07-18 19:33:44,742 [tl-loop] ERROR: Tick error: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:33:44: Traceback (most recent call last):
+2026-07-18 19:33:44:   File "/home/hermes/cortex/tl_loop/loop.py", line 32, in tick
+2026-07-18 19:33:44:     rule = apply_rules(task, agents)
+2026-07-18 19:33:44:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:33:44:   File "/home/hermes/cortex/tl_loop/rules.py", line 68, in apply_rules
+2026-07-18 19:33:44:     result = rule(task, agents)
+2026-07-18 19:33:44:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:33:44: TypeError: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:35:46: Traceback (most recent call last):
+2026-07-18 19:35:46:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:35:46:     return self._loop.run_until_complete(task)
+2026-07-18 19:35:46:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:35:46:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:35:46:     return future.result()
+2026-07-18 19:35:46:    ^^^^^^^^^^^^^^^
+2026-07-18 19:35:46:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:35:46:     await run_forever(INTERVAL)
+2026-07-18 19:35:46:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:35:46:     await asyncio.sleep(interval)
+2026-07-18 19:35:46:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:35:46:     return await future
+2026-07-18 19:35:46: ^^^^^^^^^^^
+2026-07-18 19:35:46: asyncio.exceptions.CancelledError
+2026-07-18 19:35:46: 
+2026-07-18 19:35:46: During handling of the above exception, another exception occurred:
+2026-07-18 19:35:46: 
+2026-07-18 19:35:46: Traceback (most recent call last):
+2026-07-18 19:35:46:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:35:46:     asyncio.run(main())
+2026-07-18 19:35:46:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:35:46:     return runner.run(main)
+2026-07-18 19:35:46: ^^^
+2026-07-18 19:35:46:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:35:46:     raise KeyboardInterrupt()
+2026-07-18 19:35:46: KeyboardInterrupt
+2026-07-18 19:35:46: 2026-07-18 19:35:46,556 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:35:46: 2026-07-18 19:35:46,557 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:35:46: 2026-07-18 19:35:46,558 [tl-loop] INFO: TL Loop started (interval=300s, tick #6)
+2026-07-18 19:35:46: 2026-07-18 19:35:46,560 [tl-loop] ERROR: Tick error: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:35:46: Traceback (most recent call last):
+2026-07-18 19:35:46:   File "/home/hermes/cortex/tl_loop/loop.py", line 32, in tick
+2026-07-18 19:35:46:     rule = apply_rules(task, agents)
+2026-07-18 19:35:46:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:35:46:   File "/home/hermes/cortex/tl_loop/rules.py", line 68, in apply_rules
+2026-07-18 19:35:46:     result = rule(task, agents)
+2026-07-18 19:35:46:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:35:46: TypeError: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:40:08: Traceback (most recent call last):
+2026-07-18 19:40:08:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:40:08:     return self._loop.run_until_complete(task)
+2026-07-18 19:40:08:            ^^^^^^^^^^^^^^^
+2026-07-18 19:40:08: ^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:40:08:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:40:08:     return future.result()
+2026-07-18 19:40:08:    ^^^^^^^^^^^^^^^
+2026-07-18 19:40:08:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:40:08:     await run_forever(INTERVAL)
+2026-07-18 19:40:08:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:40:08:     await asyncio.sleep(interval)
+2026-07-18 19:40:08:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:40:08:     return await future
+2026-07-18 19:40:08:  ^^^^^^^^^^^^
+2026-07-18 19:40:08: asyncio.exceptions.CancelledError
+2026-07-18 19:40:08: 
+2026-07-18 19:40:08: During handling of the above exception, another exception occurred:
+2026-07-18 19:40:08: 
+2026-07-18 19:40:08: Traceback (most recent call last):
+2026-07-18 19:40:08:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:40:08:     asyncio.run(main())
+2026-07-18 19:40:08:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:40:08:     return runner.run(main)
+2026-07-18 19:40:08: ^
+2026-07-18 19:40:08:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:40:08:     raise KeyboardInterrupt()
+2026-07-18 19:40:08: KeyboardInterrupt
+2026-07-18 19:40:08: 2026-07-18 19:40:08,788 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:40:08: 2026-07-18 19:40:08,790 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:40:08: 2026-07-18 19:40:08,790 [tl-loop] INFO: TL Loop started (interval=300s, tick #7)
+2026-07-18 19:40:08: 2026-07-18 19:40:08,792 [tl-loop] ERROR: Tick error: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:40:08: Traceback (most recent call last):
+2026-07-18 19:40:08:   File "/home/hermes/cortex/tl_loop/loop.py", line 32, in tick
+2026-07-18 19:40:08:     rule = apply_rules(task, agents)
+2026-07-18 19:40:08:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:40:08:   File "/home/hermes/cortex/tl_loop/rules.py", line 68, in apply_rules
+2026-07-18 19:40:08:     result = rule(task, agents)
+2026-07-18 19:40:08:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:40:08: TypeError: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:41:09: Traceback (most recent call last):
+2026-07-18 19:41:09:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:41:09:     return self._loop.run_until_complete(task)
+2026-07-18 19:41:09:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:41:09:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:41:09:     return future.result()
+2026-07-18 19:41:09:            ^^^^^^^^^^^^^^^
+2026-07-18 19:41:09:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:41:09:     await run_forever(INTERVAL)
+2026-07-18 19:41:09:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:41:09:     await asyncio.sleep(interval)
+2026-07-18 19:41:09:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:41:09:     return await future
+2026-07-18 19:41:09:            ^^^^^^^^^^^^
+2026-07-18 19:41:09: asyncio.exceptions.CancelledError
+2026-07-18 19:41:09: 
+2026-07-18 19:41:09: During handling of the above exception, another exception occurred:
+2026-07-18 19:41:09: 
+2026-07-18 19:41:09: Traceback (most recent call last):
+2026-07-18 19:41:09:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:41:09:     asyncio.run(main())
+2026-07-18 19:41:09:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:41:09:     return runner.run(main)
+2026-07-18 19:41:09: ^^^
+2026-07-18 19:41:09:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:41:09:     raise KeyboardInterrupt()
+2026-07-18 19:41:09: KeyboardInterrupt
+2026-07-18 19:41:12: 2026-07-18 19:41:12,365 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:41:12: 2026-07-18 19:41:12,366 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:41:12: 2026-07-18 19:41:12,366 [tl-loop] INFO: TL Loop started (interval=300s, tick #8)
+2026-07-18 19:41:12: 2026-07-18 19:41:12,368 [tl-loop] ERROR: Tick error: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:41:12: Traceback (most recent call last):
+2026-07-18 19:41:12:   File "/home/hermes/cortex/tl_loop/loop.py", line 32, in tick
+2026-07-18 19:41:12:     rule = apply_rules(task, agents)
+2026-07-18 19:41:12:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:41:12:   File "/home/hermes/cortex/tl_loop/rules.py", line 68, in apply_rules
+2026-07-18 19:41:12:     result = rule(task, agents)
+2026-07-18 19:41:12:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:41:12: TypeError: kill_switch() takes 0 positional arguments but 2 were given
+2026-07-18 19:41:44: Traceback (most recent call last):
+2026-07-18 19:41:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:41:44:     return self._loop.run_until_complete(task)
+2026-07-18 19:41:44:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:41:44:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:41:44:     return future.result()
+2026-07-18 19:41:44:            ^^^^^^^^^^^^^^^
+2026-07-18 19:41:44:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:41:44:     await run_forever(INTERVAL)
+2026-07-18 19:41:44:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:41:44:     await asyncio.sleep(interval)
+2026-07-18 19:41:44:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:41:44:     return await future
+2026-07-18 19:41:44:          ^^^^^^^^^^^^
+2026-07-18 19:41:44: asyncio.exceptions.CancelledError
+2026-07-18 19:41:44: 
+2026-07-18 19:41:44: During handling of the above exception, another exception occurred:
+2026-07-18 19:41:44: 
+2026-07-18 19:41:44: Traceback (most recent call last):
+2026-07-18 19:41:44:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:41:44:     asyncio.run(main())
+2026-07-18 19:41:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:41:44:     return runner.run(main)
+2026-07-18 19:41:44:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:41:44:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:41:44:     raise KeyboardInterrupt()
+2026-07-18 19:41:44: KeyboardInterrupt
+2026-07-18 19:41:44: 2026-07-18 19:41:44,936 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$20.0
+2026-07-18 19:41:44: 2026-07-18 19:41:44,937 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:41:44: 2026-07-18 19:41:44,937 [tl-loop] INFO: TL Loop started (interval=300s, tick #9)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,941 [tl-loop] INFO: Rule: cortex-20260718-e2d4 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,942 [tl-loop] INFO: Rule: cortex-20260718-c8c6 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,943 [tl-loop] INFO: Rule: cortex-20260718-d9d3 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,944 [tl-loop] INFO: Rule: cortex-20260718-8c46 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,946 [tl-loop] INFO: Rule: cortex-20260718-16ad -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,947 [tl-loop] INFO: Rule: cortex-20260718-078f -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,948 [tl-loop] INFO: Rule: cortex-20260718-2f1f -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: 2026-07-18 19:41:44,949 [tl-loop] INFO: Rule: cortex-20260718-892a -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:41:44: /home/hermes/cortex/tl_loop/rules.py:87: RuntimeWarning: coroutine 'llm_decide' was never awaited
+2026-07-18 19:41:44:   return RuleResult(False, "skip", "", "LLM unavailable")
+2026-07-18 19:41:44: RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+2026-07-18 19:46:21: Traceback (most recent call last):
+2026-07-18 19:46:21:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:46:21:     return self._loop.run_until_complete(task)
+2026-07-18 19:46:21:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:46:21: ^^
+2026-07-18 19:46:21:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:46:21:     return future.result()
+2026-07-18 19:46:21:            ^^^^^^^^^^^^^^^
+2026-07-18 19:46:21:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:46:21:     await run_forever(INTERVAL)
+2026-07-18 19:46:21:   File "/home/hermes/cortex/tl_loop/loop.py", line 75, in run_forever
+2026-07-18 19:46:21:     except: pass
+2026-07-18 19:46:21: ^^^^^^^^^^^^^^^^^
+2026-07-18 19:46:21:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:46:21:     return await future
+2026-07-18 19:46:21:            ^^^^^^^^^^^^
+2026-07-18 19:46:21: asyncio.exceptions.CancelledError
+2026-07-18 19:46:21: 
+2026-07-18 19:46:21: During handling of the above exception, another exception occurred:
+2026-07-18 19:46:21: 
+2026-07-18 19:46:21: Traceback (most recent call last):
+2026-07-18 19:46:21:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:46:21:     asyncio.run(main())
+2026-07-18 19:46:21:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:46:21:     return runner.run(main)
+2026-07-18 19:46:21:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:46:21:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:46:21:     raise KeyboardInterrupt()
+2026-07-18 19:46:21: KeyboardInterrupt
+2026-07-18 19:46:23: 2026-07-18 19:46:23,714 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 19:46:23: 2026-07-18 19:46:23,715 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:46:23: 2026-07-18 19:46:23,715 [tl-loop] INFO: TL Loop v2 started (interval=300s, tick #10)
+2026-07-18 19:48:06: Traceback (most recent call last):
+2026-07-18 19:48:06:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:48:06:     return self._loop.run_until_complete(task)
+2026-07-18 19:48:06:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:48:06:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:48:06:     return future.result()
+2026-07-18 19:48:06:            ^^^^^^^^^^^^^^^
+2026-07-18 19:48:06:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:48:06:     await run_forever(INTERVAL)
+2026-07-18 19:48:06:   File "/home/hermes/cortex/tl_loop/loop.py", line 93, in run_forever
+2026-07-18 19:48:06:     await asyncio.sleep(interval)
+2026-07-18 19:48:06:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:48:06:     return await future
+2026-07-18 19:48:06:            ^^^^^^^^^
+2026-07-18 19:48:06: ^^^
+2026-07-18 19:48:06: asyncio.exceptions.CancelledError
+2026-07-18 19:48:06: 
+2026-07-18 19:48:06: During handling of the above exception, another exception occurred:
+2026-07-18 19:48:06: 
+2026-07-18 19:48:06: Traceback (most recent call last):
+2026-07-18 19:48:06:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:48:06:     asyncio.run(main())
+2026-07-18 19:48:06:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:48:06:     return runner.run(main)
+2026-07-18 19:48:06:        
+2026-07-18 19:48:06:     ^^^^^^^^^^^^^^^^
+2026-07-18 19:48:06:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:48:06:     raise KeyboardInterrupt()
+2026-07-18 19:48:06: KeyboardInterrupt
+2026-07-18 19:48:06: 2026-07-18 19:48:06,865 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 19:48:06: 2026-07-18 19:48:06,866 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:48:06: 2026-07-18 19:48:06,866 [tl-loop] INFO: TL Loop v2 started (interval=300s, tick #11)
+2026-07-18 19:48:21: 2026-07-18 19:48:21,894 [tl-loop] ERROR: Tick error: database is locked
+2026-07-18 19:48:21: Traceback (most recent call last):
+2026-07-18 19:48:21:   File "/home/hermes/cortex/tl_loop/loop.py", line 45, in tick
+2026-07-18 19:48:21:     rule = apply_rules(task, agents)
+2026-07-18 19:48:21:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:48:21:   File "/home/hermes/cortex/tl_loop/rules.py", line 67, in apply_rules
+2026-07-18 19:48:21:     result = rule(task, agents)
+2026-07-18 19:48:21:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:48:21:   File "/home/hermes/cortex/tl_loop/rules.py", line 48, in rule_stuck
+2026-07-18 19:48:21:     transition(task.id, TaskStatus.RETRY)
+2026-07-18 19:48:21:   File "/home/hermes/cortex/tl_loop/state_store.py", line 46, in transition
+2026-07-18 19:48:21:     cdb.execute("UPDATE cortex_tasks SET status = ?, updated_at = ? WHERE id = ?",
+2026-07-18 19:48:21: sqlite3.OperationalError: database is locked
+2026-07-18 19:49:12: Traceback (most recent call last):
+2026-07-18 19:49:12:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:49:12:     return self._loop.run_until_complete(task)
+2026-07-18 19:49:12:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:49:12:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:49:12:     return future.result()
+2026-07-18 19:49:12:            ^^^^^^^^^^^^^^^
+2026-07-18 19:49:12:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:49:12:     await run_forever(INTERVAL)
+2026-07-18 19:49:12:   File "/home/hermes/cortex/tl_loop/loop.py", line 93, in run_forever
+2026-07-18 19:49:12:     await asyncio.sleep(interval)
+2026-07-18 19:49:12:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:49:12:     return await future
+2026-07-18 19:49:12:            ^^^^^^^^^^^^
+2026-07-18 19:49:12: .CancelledError
+2026-07-18 19:49:12: 
+2026-07-18 19:49:12: During handling of the above exception, another exception occurred:
+2026-07-18 19:49:12: 
+2026-07-18 19:49:12: Traceback (most recent call last):
+2026-07-18 19:49:12:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:49:12:     asyncio.run(main())
+2026-07-18 19:49:12:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:49:12: return runner.run(main)
+2026-07-18 19:49:12: ^^^^^^^^^^^^
+2026-07-18 19:49:12:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:49:12:     
+2026-07-18 19:49:12: raise KeyboardInterrupt()
+2026-07-18 19:49:12: KeyboardInterrupt
+2026-07-18 19:49:12: 2026-07-18 19:49:12,750 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 19:49:12: 2026-07-18 19:49:12,751 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:49:12: 2026-07-18 19:49:12,751 [tl-loop] INFO: TL Loop v2 started (interval=300s, tick #12)
+2026-07-18 19:49:24: 2026-07-18 19:49:24,006 [tl-loop] INFO: Stuck: cortex-20260718-e2d4 -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,009 [tl-loop] INFO: Stuck: cortex-20260718-c8c6 -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,012 [tl-loop] INFO: Stuck: cortex-20260718-d9d3 -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,015 [tl-loop] INFO: Stuck: cortex-20260718-8c46 -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,019 [tl-loop] INFO: Stuck: cortex-20260718-16ad -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,022 [tl-loop] INFO: Stuck: cortex-20260718-078f -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,026 [tl-loop] INFO: Stuck: cortex-20260718-2f1f -> retry
+2026-07-18 19:49:24: 2026-07-18 19:49:24,029 [tl-loop] INFO: Stuck: cortex-20260718-892a -> retry
+2026-07-18 19:54:24: 2026-07-18 19:54:24,204 [tl-loop] INFO: Rule: cortex-20260718-e2d4 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,206 [tl-loop] INFO: Rule: cortex-20260718-c8c6 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,208 [tl-loop] INFO: Rule: cortex-20260718-d9d3 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,209 [tl-loop] INFO: Rule: cortex-20260718-8c46 -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,210 [tl-loop] INFO: Rule: cortex-20260718-16ad -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,212 [tl-loop] INFO: Rule: cortex-20260718-078f -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,213 [tl-loop] INFO: Rule: cortex-20260718-2f1f -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:24: 2026-07-18 19:54:24,214 [tl-loop] INFO: Rule: cortex-20260718-892a -> dispatch (Dispatched to mac-kilo)
+2026-07-18 19:54:56: Traceback (most recent call last):
+2026-07-18 19:54:56:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 19:54:56:     return self._loop.run_until_complete(task)
+2026-07-18 19:54:56:            ^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:54:56: ^^^^^^^^^^^^
+2026-07-18 19:54:56:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 19:54:56:     return future.result()
+2026-07-18 19:54:56:            ^^^^^^^^^^^^^^^
+2026-07-18 19:54:56:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 19:54:56:     await run_forever(INTERVAL)
+2026-07-18 19:54:56:   File "/home/hermes/cortex/tl_loop/loop.py", line 93, in run_forever
+2026-07-18 19:54:56:     logger.exception(f"Tick error: {e}")
+2026-07-18 19:54:56:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:54:56:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 19:54:56:     return await future
+2026-07-18 19:54:56: ^^^^
+2026-07-18 19:54:56: asyncio.exceptions.CancelledError
+2026-07-18 19:54:56: 
+2026-07-18 19:54:56: During handling of the above exception, another exception occurred:
+2026-07-18 19:54:56: 
+2026-07-18 19:54:56: Traceback (most recent call last):
+2026-07-18 19:54:56:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 19:54:56:     asyncio.run(main())
+2026-07-18 19:54:56:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 19:54:56:     return runner.run(main)
+2026-07-18 19:54:56:            ^^^^^^^^^^^^^^^^
+2026-07-18 19:54:56:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 19:54:56:     raise KeyboardInterrupt()
+2026-07-18 19:54:56: KeyboardInterrupt
+2026-07-18 19:54:56: Traceback (most recent call last):
+2026-07-18 19:54:56:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:54:56:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:54:56:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:54:56:     f.write('# ' + task.title + '
+2026-07-18 19:54:56:                                 ^
+2026-07-18 19:54:56: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:07: Traceback (most recent call last):
+2026-07-18 19:55:07:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:07: from cortex.tl_loop.loop import run_forever
+2026-07-18 19:55:07:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:07:     f.write('# ' + task.title + '
+2026-07-18 19:55:07:                                 ^
+2026-07-18 19:55:07: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:17: Traceback (most recent call last):
+2026-07-18 19:55:17:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:17:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:55:17:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:17:     f.write('# ' + task.title + '
+2026-07-18 19:55:17:             ^
+2026-07-18 19:55:17: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:27: Traceback (most recent call last):
+2026-07-18 19:55:27:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:27:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:55:27:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:27: 
+2026-07-18 19:55:27:                                 ^
+2026-07-18 19:55:27: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:37: Traceback (most recent call last):
+2026-07-18 19:55:37:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:37:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:55:37:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:37:     f.write('# ' + task.title + '
+2026-07-18 19:55:37:                                 ^
+2026-07-18 19:55:37: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:47: Traceback (most recent call last):
+2026-07-18 19:55:47:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:47: 
+2026-07-18 19:55:47:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:47:     f.write('# ' + task.title + '
+2026-07-18 19:55:47:                                 ^
+2026-07-18 19:55:47: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:55:57: Traceback (most recent call last):
+2026-07-18 19:55:57:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:55:57:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:55:57:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:55:57:     f.write('# ' + task.title + '
+2026-07-18 19:55:57:                                 ^
+2026-07-18 19:55:57: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:07: Traceback (most recent call last):
+2026-07-18 19:56:07:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:07:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:56:07:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:07:     f.write('# ' + task.title + '
+2026-07-18 19:56:07:                                 ^
+2026-07-18 19:56:07: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:17: Traceback (most recent call last):
+2026-07-18 19:56:17:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:17:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:56:17:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:17:     f.write('# ' + task.title + '
+2026-07-18 19:56:17:         ^
+2026-07-18 19:56:17: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:28: Traceback (most recent call last):
+2026-07-18 19:56:28:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:28: 
+2026-07-18 19:56:28:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:28:     f.write('# ' + task.title + '
+2026-07-18 19:56:28:                                 ^
+2026-07-18 19:56:28: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:38: Traceback (most recent call last):
+2026-07-18 19:56:38:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:38:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:56:38:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:38:     f.write('# ' + task.title + '
+2026-07-18 19:56:38:                                 ^
+2026-07-18 19:56:38: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:48: Traceback (most recent call last):
+2026-07-18 19:56:48:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:48:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:56:48:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:48:     f.write('# ' + task.title + '
+2026-07-18 19:56:48:                                 ^
+2026-07-18 19:56:48: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:56:58: Traceback (most recent call last):
+2026-07-18 19:56:58:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:56:58:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:56:58:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:56:58:     f.write('# ' + task.title + '
+2026-07-18 19:56:58:  ^
+2026-07-18 19:56:58: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:08: Traceback (most recent call last):
+2026-07-18 19:57:08:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:08:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:08:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:08:     f.write('# ' + task.title + '
+2026-07-18 19:57:08:                                 ^
+2026-07-18 19:57:08: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:18: Traceback (most recent call last):
+2026-07-18 19:57:18:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:18:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:18:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:18:     f.write('# ' + task.title + '
+2026-07-18 19:57:18:                                 ^
+2026-07-18 19:57:18: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:28: Traceback (most recent call last):
+2026-07-18 19:57:28:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:28:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:28:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:28:     f.write('# ' + task.title + '
+2026-07-18 19:57:28:                         ^
+2026-07-18 19:57:28: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:38: Traceback (most recent call last):
+2026-07-18 19:57:38:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:38:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:38:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:38:     f.write('# ' + task.title + '
+2026-07-18 19:57:38:                                 ^
+2026-07-18 19:57:38: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:49: Traceback (most recent call last):
+2026-07-18 19:57:49:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:49:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:49:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:49:     f.write('# ' + task.title + '
+2026-07-18 19:57:49:                                 ^
+2026-07-18 19:57:49: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:57:59: Traceback (most recent call last):
+2026-07-18 19:57:59:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:57:59:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:57:59:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:57:59:     f.write('# ' + task.title + '
+2026-07-18 19:57:59:                                 ^
+2026-07-18 19:57:59: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:58:09: Traceback (most recent call last):
+2026-07-18 19:58:09:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:58:09:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:58:09:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:58:09:     f.write('# ' + task.title + '
+2026-07-18 19:58:09:                                 ^
+2026-07-18 19:58:09: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:58:19: Traceback (most recent call last):
+2026-07-18 19:58:19:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:58:19:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:58:19:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:58:19:     f.write('# ' + task.title + '
+2026-07-18 19:58:19:                             ^
+2026-07-18 19:58:19: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:58:29: Traceback (most recent call last):
+2026-07-18 19:58:29:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:58:29:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:58:29:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:58:29:     f.write('# ' + task.title + '
+2026-07-18 19:58:29:                                 ^
+2026-07-18 19:58:29: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:58:39: Traceback (most recent call last):
+2026-07-18 19:58:39:   File "/home/hermes/cortex/tl_loop/main.py", line 10, in <module>
+2026-07-18 19:58:39:     from cortex.tl_loop.loop import run_forever
+2026-07-18 19:58:39:   File "/home/hermes/cortex/tl_loop/loop.py", line 68
+2026-07-18 19:58:39:     f.write('# ' + task.title + '
+2026-07-18 19:58:39:                                 ^
+2026-07-18 19:58:39: SyntaxError: unterminated string literal (detected at line 68)
+2026-07-18 19:58:49: 2026-07-18 19:58:49,735 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 19:58:49: 2026-07-18 19:58:49,736 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:58:49: 2026-07-18 19:58:49,736 [tl-loop] INFO: TL Loop v3 Wave1 started (interval=300s, tick #14)
+2026-07-18 19:58:52: 2026-07-18 19:58:52,414 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 19:58:52: 2026-07-18 19:58:52,415 [tl-loop] INFO: TL State Store ready
+2026-07-18 19:58:52: 2026-07-18 19:58:52,415 [tl-loop] INFO: TL Loop v3 Wave1 started (interval=300s, tick #14)
+2026-07-18 19:59:07: 2026-07-18 19:59:07,446 [tl-loop] ERROR: Tick error: database is locked
+2026-07-18 19:59:07: Traceback (most recent call last):
+2026-07-18 19:59:07:   File "/home/hermes/cortex/tl_loop/loop.py", line 55, in tick
+2026-07-18 19:59:07:     rule = apply_rules(task, agents)
+2026-07-18 19:59:07:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 19:59:07:   File "/home/hermes/cortex/tl_loop/rules.py", line 67, in apply_rules
+2026-07-18 19:59:07:     result = rule(task, agents)
+2026-07-18 19:59:07:              ^^^^^^^^^^^^^^^^^^
+2026-07-18 19:59:07:   File "/home/hermes/cortex/tl_loop/rules.py", line 30, in rule_new_ready
+2026-07-18 19:59:07:     assign_agent(task.id, agent)
+2026-07-18 19:59:07:   File "/home/hermes/cortex/tl_loop/state_store.py", line 101, in assign_agent
+2026-07-18 19:59:07:     cdb.execute("UPDATE cortex_tasks SET executor_agent = ?, status = 'dispatched' WHERE id = ?", (agent, task_id))
+2026-07-18 19:59:07: sqlite3.OperationalError: database is locked
+2026-07-18 20:00:02: Traceback (most recent call last):
+2026-07-18 20:00:02:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-07-18 20:00:02:     return self._loop.run_until_complete(task)
+2026-07-18 20:00:02:            ^^^^^^^^^^^^^^^^^^
+2026-07-18 20:00:02: ^^^^^^^^^^^^^^^^^
+2026-07-18 20:00:02:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-07-18 20:00:02:     return future.result()
+2026-07-18 20:00:02:            ^^^^^^^^
+2026-07-18 20:00:02: ^^^^^^^
+2026-07-18 20:00:02:   File "/home/hermes/cortex/tl_loop/main.py", line 23, in main
+2026-07-18 20:00:02:     await run_forever(INTERVAL)
+2026-07-18 20:00:02:   File "/home/hermes/cortex/tl_loop/loop.py", line 117, in run_forever
+2026-07-18 20:00:02:     await asyncio.sleep(interval)
+2026-07-18 20:00:02:   File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+2026-07-18 20:00:02:     return await future
+2026-07-18 20:00:02: 
+2026-07-18 20:00:02: asyncio.exceptions.CancelledError
+2026-07-18 20:00:02: 
+2026-07-18 20:00:02: During handling of the above exception, another exception occurred:
+2026-07-18 20:00:02: 
+2026-07-18 20:00:02: Traceback (most recent call last):
+2026-07-18 20:00:02:   File "/home/hermes/cortex/tl_loop/main.py", line 26, in <module>
+2026-07-18 20:00:02:     asyncio.run(main())
+2026-07-18 20:00:02:   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+2026-07-18 20:00:02:     return runner.run(main)
+2026-07-18 20:00:02:            ^^^^^^^^^^^^^^^^
+2026-07-18 20:00:02:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-07-18 20:00:02:     raise KeyboardInterrupt()
+2026-07-18 20:00:02: 
+2026-07-18 20:00:02: 2026-07-18 20:00:02,866 [tl-loop] INFO: TL Orchestration Loop v1.0 — interval=300s, cost_limit=$70.0
+2026-07-18 20:00:02: 2026-07-18 20:00:02,867 [tl-loop] INFO: TL State Store ready
+2026-07-18 20:00:02: 2026-07-18 20:00:02,867 [tl-loop] INFO: TL Loop v3 Wave1 started (interval=300s, tick #15)

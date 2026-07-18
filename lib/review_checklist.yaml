@@ -1,0 +1,22 @@
+# Tier-1 Review Checklist (10 пунктов)
+items:
+  - id: imports
+    question: "Все импорты корректны и не содержат циклических зависимостей?"
+  - id: types
+    question: "Типы аннотированы, нет Any без необходимости?"
+  - id: naming
+    question: "Имена переменных/функций следуют конвенциям проекта?"
+  - id: error_handling
+    question: "Ошибки обрабатываются, нет голых except:?"
+  - id: security
+    question: "Нет хардкоденных секретов, API-ключей, паролей?"
+  - id: tests
+    question: "Добавлены тесты на новую функциональность?"
+  - id: docs
+    question: "Публичные функции/классы имеют docstring?"
+  - id: perf
+    question: "Нет очевидных проблем производительности (N+1 запросы, блокирующий I/O)?"
+  - id: conventions
+    question: "Код следует стилю проекта (ruff/eslint чисто)?"
+  - id: destructive
+    question: "Нет деструктивных операций (rm -rf, drop table) без явного разрешения?"

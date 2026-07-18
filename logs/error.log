@@ -1,0 +1,421 @@
+2026-07-18 18:06:43: Traceback (most recent call last):
+2026-07-18 18:06:43:   File "/home/hermes/cortex/orchestrator.py", line 12, in <module>
+2026-07-18 18:06:43:     load_dotenv(Path(__file__).parent / ".env")
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 429, in load_dotenv
+2026-07-18 18:06:43:     return dotenv.set_as_environment_variables()
+2026-07-18 18:06:43:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 101, in set_as_environment_variables
+2026-07-18 18:06:43:     if not self.dict():
+2026-07-18 18:06:43: ^^^
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 84, in dict
+2026-07-18 18:06:43:     resolve_variables(raw_values, override=self.override)
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 295, in resolve_variables
+2026-07-18 18:06:43:     for name, value in values:
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 92, in parse
+2026-07-18 18:06:43:     with self._get_stream() as stream:
+2026-07-18 18:06:43:   File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+2026-07-18 18:06:43:     return next(self.gen)
+2026-07-18 18:06:43: ^^^^^^^^
+2026-07-18 18:06:43:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 63, in _get_stream
+2026-07-18 18:06:43:     with open(self.dotenv_path, encoding=self.encoding) as stream:
+2026-07-18 18:06:43: ^^^^^^^^^^^^^^^^
+2026-07-18 18:06:43: PermissionError: [Errno 13] Permission denied: '/home/hermes/cortex/.env'
+2026-07-18 18:06:48: Traceback (most recent call last):
+2026-07-18 18:06:48:   File "/home/hermes/cortex/orchestrator.py", line 12, in <module>
+2026-07-18 18:06:48:     load_dotenv(Path(__file__).parent / ".env")
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 429, in load_dotenv
+2026-07-18 18:06:48:     return dotenv.set_as_environment_variables()
+2026-07-18 18:06:48:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 101, in set_as_environment_variables
+2026-07-18 18:06:48:     if not self.dict():
+2026-07-18 18:06:48:        ^^^^^^^^^^^
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 84, in dict
+2026-07-18 18:06:48:     resolve_variables(raw_values, override=self.override)
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 295, in resolve_variables
+2026-07-18 18:06:48:     for name, value in values:
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 92, in parse
+2026-07-18 18:06:48:     with self._get_stream() as stream:
+2026-07-18 18:06:48:   File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+2026-07-18 18:06:48:     return next(self.gen)
+2026-07-18 18:06:48: ^^
+2026-07-18 18:06:48:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 63, in _get_stream
+2026-07-18 18:06:48:     with open(self.dotenv_path, encoding=self.encoding) as stream:
+2026-07-18 18:06:48:          ^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:48: ^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:48: PermissionError: [Errno 13] Permission denied: '/home/hermes/cortex/.env'
+2026-07-18 18:06:53: Traceback (most recent call last):
+2026-07-18 18:06:53:   File "/home/hermes/cortex/orchestrator.py", line 12, in <module>
+2026-07-18 18:06:53:     load_dotenv(Path(__file__).parent / ".env")
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 429, in load_dotenv
+2026-07-18 18:06:53:     return dotenv.set_as_environment_variables()
+2026-07-18 18:06:53:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 101, in set_as_environment_variables
+2026-07-18 18:06:53:     if not self.dict():
+2026-07-18 18:06:53:  ^^^^^^^^^^^
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 84, in dict
+2026-07-18 18:06:53:     resolve_variables(raw_values, override=self.override)
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 295, in resolve_variables
+2026-07-18 18:06:53:     for name, value in values:
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 92, in parse
+2026-07-18 18:06:53:     with self._get_stream() as stream:
+2026-07-18 18:06:53:   File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+2026-07-18 18:06:53:     return next(self.gen)
+2026-07-18 18:06:53: ^^^^^^^^^^
+2026-07-18 18:06:53:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 63, in _get_stream
+2026-07-18 18:06:53:     with open(self.dotenv_path, encoding=self.encoding) as stream:
+2026-07-18 18:06:53: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:53: : [Errno 13] Permission denied: '/home/hermes/cortex/.env'
+2026-07-18 18:06:58: Traceback (most recent call last):
+2026-07-18 18:06:58:   File "/home/hermes/cortex/orchestrator.py", line 12, in <module>
+2026-07-18 18:06:58:     load_dotenv(Path(__file__).parent / ".env")
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 429, in load_dotenv
+2026-07-18 18:06:58:     return dotenv.set_as_environment_variables()
+2026-07-18 18:06:58:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 101, in set_as_environment_variables
+2026-07-18 18:06:58:     if not self.dict():
+2026-07-18 18:06:58:            ^^^^^^^^^^^
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 84, in dict
+2026-07-18 18:06:58:     resolve_variables(raw_values, override=self.override)
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 295, in resolve_variables
+2026-07-18 18:06:58:     for name, value in values:
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 92, in parse
+2026-07-18 18:06:58:     with self._get_stream() as stream:
+2026-07-18 18:06:58:   File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+2026-07-18 18:06:58:     return next(self.gen)
+2026-07-18 18:06:58:            ^^^^^^^^^^^^^^
+2026-07-18 18:06:58:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/dotenv/main.py", line 63, in _get_stream
+2026-07-18 18:06:58:     with open(self.dotenv_path, encoding=self.encoding) as stream:
+2026-07-18 18:06:58:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:06:58: PermissionError: [Errno 13] Permission denied: '/home/hermes/cortex/.env'
+2026-07-18 18:07:03: Traceback (most recent call last):
+2026-07-18 18:07:03:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:03:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:03: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:09: Traceback (most recent call last):
+2026-07-18 18:07:09:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:09:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:09: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:11: Traceback (most recent call last):
+2026-07-18 18:07:11:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:11:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:11: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:16: Traceback (most recent call last):
+2026-07-18 18:07:16:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:16:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:16: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:22: Traceback (most recent call last):
+2026-07-18 18:07:22:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:22:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:22: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:27: Traceback (most recent call last):
+2026-07-18 18:07:27:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:27:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:27: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:33: Traceback (most recent call last):
+2026-07-18 18:07:33:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:33:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:33: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:38: Traceback (most recent call last):
+2026-07-18 18:07:38:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:38:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:38: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:44: Traceback (most recent call last):
+2026-07-18 18:07:44:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:44:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:44: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:49: Traceback (most recent call last):
+2026-07-18 18:07:49:   File "/home/hermes/cortex/orchestrator.py", line 18, in <module>
+2026-07-18 18:07:49:     from cortex.lib.db import init_db, get_db
+2026-07-18 18:07:49: ModuleNotFoundError: No module named 'cortex'
+2026-07-18 18:07:58: /home/hermes/cortex/orchestrator.py:84: DeprecationWarning: 
+2026-07-18 18:07:58:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:07:58: 
+2026-07-18 18:07:58:         Read more about it in the
+2026-07-18 18:07:58:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:07:58:         
+2026-07-18 18:07:58:   @app.on_event("startup")
+2026-07-18 18:07:58: /home/hermes/cortex/orchestrator.py:91: DeprecationWarning: 
+2026-07-18 18:07:58:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:07:58: 
+2026-07-18 18:07:58:         Read more about it in the
+2026-07-18 18:07:58:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:07:58:         
+2026-07-18 18:07:58:   @app.on_event("shutdown")
+2026-07-18 18:07:58: 2026-07-18 18:07:58,073 [cortex] INFO: Cortex v0.1.0-wave0 — Team Lead: GLM-5.2
+2026-07-18 18:07:58: /home/hermes/cortex/orchestrator.py:122: DeprecationWarning: There is no current event loop
+2026-07-18 18:07:58:   loop = asyncio.get_event_loop()
+2026-07-18 18:07:58: INFO:     Started server process [900649]
+2026-07-18 18:07:58: INFO:     Waiting for application startup.
+2026-07-18 18:07:58: 2026-07-18 18:07:58,098 [cortex] INFO: Main orchestration loop started (placeholder — Wave 1)
+2026-07-18 18:07:58: 2026-07-18 18:07:58,098 [cortex] INFO: Cortex v0.1.0-wave0 starting on port 9015
+2026-07-18 18:07:58: 2026-07-18 18:07:58,099 [cortex] INFO: Database initialized
+2026-07-18 18:07:58: INFO:     Application startup complete.
+2026-07-18 18:07:58: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:09:24: INFO:     Shutting down
+2026-07-18 18:09:24: INFO:     Waiting for application shutdown.
+2026-07-18 18:09:24: 2026-07-18 18:09:24,386 [cortex] INFO: Cortex shutting down
+2026-07-18 18:09:24: INFO:     Application shutdown complete.
+2026-07-18 18:09:24: INFO:     Finished server process [900649]
+2026-07-18 18:09:24: 2026-07-18 18:09:24,386 [cortex] INFO: Signal 2 received, shutting down
+2026-07-18 18:09:24: 2026-07-18 18:09:24,402 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:09:24: task: <Task pending name='Task-2' coro=<heartbeat_loop() running at /home/hermes/cortex/orchestrator.py:110> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:09:24: 2026-07-18 18:09:24,402 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:09:24: task: <Task pending name='Task-3' coro=<main_loop() running at /home/hermes/cortex/orchestrator.py:117> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:09:24: /home/hermes/cortex/orchestrator.py:122: DeprecationWarning: 
+2026-07-18 18:09:24:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:09:24: 
+2026-07-18 18:09:24:         Read more about it in the
+2026-07-18 18:09:24:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:09:24:         
+2026-07-18 18:09:24:   @app.on_event("startup")
+2026-07-18 18:09:24: /home/hermes/cortex/orchestrator.py:129: DeprecationWarning: 
+2026-07-18 18:09:24:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:09:24: 
+2026-07-18 18:09:24:         Read more about it in the
+2026-07-18 18:09:24:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:09:24:         
+2026-07-18 18:09:24:   @app.on_event("shutdown")
+2026-07-18 18:09:24: 2026-07-18 18:09:24,984 [cortex] INFO: Cortex v0.2.0-wave1 — Team Lead: GLM-5.2
+2026-07-18 18:09:24: /home/hermes/cortex/orchestrator.py:172: DeprecationWarning: There is no current event loop
+2026-07-18 18:09:24:   loop = asyncio.get_event_loop()
+2026-07-18 18:09:25: INFO:     Started server process [901502]
+2026-07-18 18:09:25: INFO:     Waiting for application startup.
+2026-07-18 18:09:25: 2026-07-18 18:09:25,005 [cortex] INFO: Main orchestration loop active
+2026-07-18 18:09:25: 2026-07-18 18:09:25,006 [cortex] INFO: Cortex v0.2.0-wave1 — Team Lead: GLM-5.2 — Wave 1: INGEST+DISPATCH
+2026-07-18 18:09:25: 2026-07-18 18:09:25,006 [cortex] INFO: DB initialized
+2026-07-18 18:09:25: INFO:     Application startup complete.
+2026-07-18 18:09:25: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:09:29: 2026-07-18 18:09:29,570 [cortex] INFO: INGEST: created task cortex-20260718-e2d49c6a — Test Wave 1: ingest + dispatch
+2026-07-18 18:09:29: 2026-07-18 18:09:29,581 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 18:09:55: 2026-07-18 18:09:55,007 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:10:25: 2026-07-18 18:10:25,008 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:10:55: 2026-07-18 18:10:55,010 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:11:15: INFO:     Shutting down
+2026-07-18 18:11:15: INFO:     Waiting for application shutdown.
+2026-07-18 18:11:15: 2026-07-18 18:11:15,595 [cortex] INFO: Cortex shutting down
+2026-07-18 18:11:15: INFO:     Application shutdown complete.
+2026-07-18 18:11:15: INFO:     Finished server process [901502]
+2026-07-18 18:11:15: 2026-07-18 18:11:15,596 [cortex] INFO: Signal 2, shutting down
+2026-07-18 18:11:15: 2026-07-18 18:11:15,640 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:11:15: task: <Task pending name='Task-2' coro=<heartbeat_loop() running at /home/hermes/cortex/orchestrator.py:143> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:11:15: 2026-07-18 18:11:15,640 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:11:15: task: <Task pending name='Task-3' coro=<dispatch_loop() running at /home/hermes/cortex/orchestrator.py:161> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:11:15: 2026-07-18 18:11:15,640 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:11:15: task: <Task pending name='Task-4' coro=<main_loop() running at /home/hermes/cortex/orchestrator.py:167> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:11:16: /home/hermes/cortex/orchestrator.py:138: DeprecationWarning: 
+2026-07-18 18:11:16:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:11:16: 
+2026-07-18 18:11:16:         Read more about it in the
+2026-07-18 18:11:16:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:11:16:         
+2026-07-18 18:11:16:   @app.on_event("startup")
+2026-07-18 18:11:16: /home/hermes/cortex/orchestrator.py:145: DeprecationWarning: 
+2026-07-18 18:11:16:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:11:16: 
+2026-07-18 18:11:16:         Read more about it in the
+2026-07-18 18:11:16:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:11:16:         
+2026-07-18 18:11:16:   @app.on_event("shutdown")
+2026-07-18 18:11:16: 2026-07-18 18:11:16,377 [cortex] INFO: Cortex v0.3.0-wave2 — GLM-5.2 — Waves 0-2 ready
+2026-07-18 18:11:16: /home/hermes/cortex/orchestrator.py:189: DeprecationWarning: There is no current event loop
+2026-07-18 18:11:16:   loop = asyncio.get_event_loop()
+2026-07-18 18:11:16: INFO:     Started server process [902339]
+2026-07-18 18:11:16: INFO:     Waiting for application startup.
+2026-07-18 18:11:16: 2026-07-18 18:11:16,400 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:11:16: 2026-07-18 18:11:16,401 [cortex] INFO: Cortex v0.3.0-wave2 — GLM-5.2 Team Lead — Waves 0-2
+2026-07-18 18:11:16: 2026-07-18 18:11:16,401 [cortex] INFO: DB ready
+2026-07-18 18:11:16: INFO:     Application startup complete.
+2026-07-18 18:11:16: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:11:20: 2026-07-18 18:11:20,786 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 18:11:46: 2026-07-18 18:11:46,402 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:12:16: 2026-07-18 18:12:16,402 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:12:46: 2026-07-18 18:12:46,403 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e2d49c6a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:12:58: INFO:     Shutting down
+2026-07-18 18:12:58: INFO:     Waiting for application shutdown.
+2026-07-18 18:12:58: 2026-07-18 18:12:58,251 [cortex] INFO: Cortex shutdown
+2026-07-18 18:12:58: INFO:     Application shutdown complete.
+2026-07-18 18:12:58: INFO:     Finished server process [902339]
+2026-07-18 18:12:58: 2026-07-18 18:12:58,287 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:12:58: task: <Task pending name='Task-2' coro=<heartbeat_loop() running at /home/hermes/cortex/orchestrator.py:158> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:12:58: 2026-07-18 18:12:58,287 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:12:58: task: <Task pending name='Task-3' coro=<dispatch_loop() running at /home/hermes/cortex/orchestrator.py:172> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:12:58: 2026-07-18 18:12:58,288 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:12:58: task: <Task pending name='Task-4' coro=<execute_loop() running at /home/hermes/cortex/orchestrator.py:184> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:12:59: /home/hermes/cortex/orchestrator.py:208: DeprecationWarning: 
+2026-07-18 18:12:59:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:12:59: 
+2026-07-18 18:12:59:         Read more about it in the
+2026-07-18 18:12:59:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:12:59:         
+2026-07-18 18:12:59:   @app.on_event("startup")
+2026-07-18 18:12:59: /home/hermes/cortex/orchestrator.py:225: DeprecationWarning: There is no current event loop
+2026-07-18 18:12:59:   loop = asyncio.get_event_loop()
+2026-07-18 18:12:59: INFO:     Started server process [903248]
+2026-07-18 18:12:59: INFO:     Waiting for application startup.
+2026-07-18 18:12:59: 2026-07-18 18:12:59,157 [cortex] INFO: Cortex v1.0 — GLM-5.2 Team Lead — 8 phases active
+2026-07-18 18:12:59: INFO:     Application startup complete.
+2026-07-18 18:12:59: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:13:03: 2026-07-18 18:13:03,516 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 18:13:12: 2026-07-18 18:13:12,483 [cortex] INFO: INGEST: created task cortex-20260718-55c2ea61 — Test full pipeline
+2026-07-18 18:13:19: 2026-07-18 18:13:19,775 [cortex] INFO: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-18 18:13:19: 2026-07-18 18:13:19,776 [cortex] WARNING: OpenRouter attempt 1/3 failed: Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'
+2026-07-18 18:13:19: For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400. Retry in 1s
+2026-07-18 18:13:21: 2026-07-18 18:13:21,010 [cortex] INFO: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-18 18:13:21: 2026-07-18 18:13:21,011 [cortex] WARNING: OpenRouter attempt 2/3 failed: Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'
+2026-07-18 18:13:21: For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400. Retry in 2s
+2026-07-18 18:13:23: 2026-07-18 18:13:23,121 [cortex] INFO: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-18 18:13:23: 2026-07-18 18:13:23,122 [cortex] WARNING: OpenRouter attempt 3/3 failed: Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'
+2026-07-18 18:13:23: For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400. Retry in 4s
+2026-07-18 18:13:27: 2026-07-18 18:13:27,123 [cortex] ERROR: PLAN failed for cortex-20260718-55c2ea61: Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'
+2026-07-18 18:13:27: For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-07-18 18:13:27: 2026-07-18 18:13:27,133 [cortex] INFO: MERGE: branch cortex/cortex-20260718-55c2ea61 not found, skipping git merge
+2026-07-18 18:13:27: 2026-07-18 18:13:27,134 [cortex] INFO: MERGE: cortex-20260718-55c2ea61 completed
+2026-07-18 18:13:27: 2026-07-18 18:13:27,136 [cortex] INFO: KB-WRITE: cortex-20260718-55c2ea61 → cortex/tasks/cortex/2026-07-18-cortex-20260718-55c2ea61.md
+2026-07-18 18:13:27: 2026-07-18 18:13:27,158 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 18:23:38: INFO:     Shutting down
+2026-07-18 18:23:38: INFO:     Waiting for application shutdown.
+2026-07-18 18:23:38: INFO:     Application shutdown complete.
+2026-07-18 18:23:38: INFO:     Finished server process [903248]
+2026-07-18 18:23:39: 2026-07-18 18:23:39,043 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:23:39: task: <Task pending name='Task-3' coro=<run_loops() running at /home/hermes/cortex/orchestrator.py:221> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:23:39: /home/hermes/cortex/orchestrator.py:230: DeprecationWarning: 
+2026-07-18 18:23:39:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:23:39: 
+2026-07-18 18:23:39:         Read more about it in the
+2026-07-18 18:23:39:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:23:39:         
+2026-07-18 18:23:39:   @app.on_event("startup")
+2026-07-18 18:23:39: /home/hermes/cortex/orchestrator.py:247: DeprecationWarning: There is no current event loop
+2026-07-18 18:23:39:   loop = asyncio.get_event_loop()
+2026-07-18 18:23:39: INFO:     Started server process [906216]
+2026-07-18 18:23:39: INFO:     Waiting for application startup.
+2026-07-18 18:23:39: 2026-07-18 18:23:39,790 [cortex] INFO: Cortex v1.0 — GLM-5.2 Team Lead — 8 phases active
+2026-07-18 18:23:39: INFO:     Application startup complete.
+2026-07-18 18:23:39: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:24:00: 2026-07-18 18:24:00,548 [cortex] INFO: INGEST: created task cortex-20260718-8c460c10 — edit kilo.jsonc
+2026-07-18 18:24:00: ERROR:    Exception in ASGI application
+2026-07-18 18:24:00: Traceback (most recent call last):
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 422, in run_asgi
+2026-07-18 18:24:00:     result = await app(  # type: ignore[func-returns-value]
+2026-07-18 18:24:00:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+2026-07-18 18:24:00:     return await self.app(scope, receive, send)
+2026-07-18 18:24:00:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/applications.py", line 1163, in __call__
+2026-07-18 18:24:00:     await super().__call__(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/applications.py", line 90, in __call__
+2026-07-18 18:24:00:     await self.middleware_stack(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2026-07-18 18:24:00:     raise exc
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2026-07-18 18:24:00:     await self.app(scope, receive, _send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 88, in __call__
+2026-07-18 18:24:00:     await self.app(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2026-07-18 18:24:00:     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-07-18 18:24:00:     raise exc
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-07-18 18:24:00:     await app(scope, receive, sender)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2026-07-18 18:24:00:     await self.app(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+2026-07-18 18:24:00:     await self.middleware_stack(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 2683, in app
+2026-07-18 18:24:00:     await route.handle(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 1266, in handle
+2026-07-18 18:24:00:     await super().handle(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+2026-07-18 18:24:00:     await self.app(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 150, in app
+2026-07-18 18:24:00:     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-07-18 18:24:00:     raise exc
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-07-18 18:24:00:     await app(scope, receive, sender)
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 136, in app
+2026-07-18 18:24:00:     response = await f(request)
+2026-07-18 18:24:00:                ^^^^^^^^^^^^^^^^
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 690, in app
+2026-07-18 18:24:00:     raw_response = await run_endpoint_function(
+2026-07-18 18:24:00:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:24:00:   File "/home/hermes/.hermes-venv/lib/python3.12/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+2026-07-18 18:24:00:     return await dependant.call(**values)
+2026-07-18 18:24:00:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-18 18:24:00:   File "/home/hermes/cortex/orchestrator.py", line 77, in create_task
+2026-07-18 18:24:00:     _ex("UPDATE cortex_tasks SET status='blocked', notes=? WHERE id=?", (_js.dumps(gate, ensure_ascii=False), tid))
+2026-07-18 18:24:00:   File "/home/hermes/cortex/lib/db.py", line 41, in execute
+2026-07-18 18:24:00:     conn.execute(sql, params)
+2026-07-18 18:24:00: sqlite3.OperationalError: no such column: notes
+2026-07-18 18:24:24: INFO:     Shutting down
+2026-07-18 18:24:24: INFO:     Waiting for application shutdown.
+2026-07-18 18:24:24: INFO:     Application shutdown complete.
+2026-07-18 18:24:24: INFO:     Finished server process [906216]
+2026-07-18 18:24:24: 2026-07-18 18:24:24,727 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:24:24: task: <Task pending name='Task-3' coro=<run_loops() done, defined at /home/hermes/cortex/orchestrator.py:237> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:24:25: /home/hermes/cortex/orchestrator.py:230: DeprecationWarning: 
+2026-07-18 18:24:25:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:24:25: 
+2026-07-18 18:24:25:         Read more about it in the
+2026-07-18 18:24:25:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:24:25:         
+2026-07-18 18:24:25:   @app.on_event("startup")
+2026-07-18 18:24:25: /home/hermes/cortex/orchestrator.py:247: DeprecationWarning: There is no current event loop
+2026-07-18 18:24:25:   loop = asyncio.get_event_loop()
+2026-07-18 18:24:25: INFO:     Started server process [906546]
+2026-07-18 18:24:25: INFO:     Waiting for application startup.
+2026-07-18 18:24:25: 2026-07-18 18:24:25,528 [cortex] INFO: Cortex v1.0 — GLM-5.2 Team Lead — 8 phases active
+2026-07-18 18:24:25: INFO:     Application startup complete.
+2026-07-18 18:24:25: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:24:37: 2026-07-18 18:24:37,124 [cortex] INFO: INGEST: created task cortex-20260718-7edea6be — fix kilo.jsonc
+2026-07-18 18:24:37: 2026-07-18 18:24:37,284 [cortex] INFO: INGEST: created task cortex-20260718-16ad1a13 — add login
+2026-07-18 18:43:41: INFO:     Shutting down
+2026-07-18 18:43:41: INFO:     Waiting for application shutdown.
+2026-07-18 18:43:41: INFO:     Application shutdown complete.
+2026-07-18 18:43:41: INFO:     Finished server process [906546]
+2026-07-18 18:43:41: 2026-07-18 18:43:41,276 [cortex] ERROR: Task was destroyed but it is pending!
+2026-07-18 18:43:41: task: <Task pending name='Task-3' coro=<run_loops() running at /home/hermes/cortex/orchestrator.py:243> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-07-18 18:43:42: /home/hermes/cortex/orchestrator.py:271: DeprecationWarning: 
+2026-07-18 18:43:42:         on_event is deprecated, use lifespan event handlers instead.
+2026-07-18 18:43:42: 
+2026-07-18 18:43:42:         Read more about it in the
+2026-07-18 18:43:42:         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+2026-07-18 18:43:42:         
+2026-07-18 18:43:42:   @app.on_event("startup")
+2026-07-18 18:43:42: /home/hermes/cortex/orchestrator.py:296: DeprecationWarning: There is no current event loop
+2026-07-18 18:43:42:   loop = asyncio.get_event_loop()
+2026-07-18 18:43:42: INFO:     Started server process [911857]
+2026-07-18 18:43:42: INFO:     Waiting for application startup.
+2026-07-18 18:43:42: 2026-07-18 18:43:42,046 [cortex] INFO: Cortex v1.0 — GLM-5.2 Team Lead — 8 phases + email/TG
+2026-07-18 18:43:42: 2026-07-18 18:43:42,357 [cortex] INFO: Inbox: =?UTF-8?Q?LTD=20BeGet:=20=D0=92=D0=B0=D1=88=20?=
+2026-07-18 18:43:42:  =?UTF-8?Q
+2026-07-18 18:43:42: INFO:     Application startup complete.
+2026-07-18 18:43:42: INFO:     Uvicorn running on http://0.0.0.0:9015 (Press CTRL+C to quit)
+2026-07-18 18:43:48: 2026-07-18 18:43:48,650 [cortex] INFO: Email sent: TEST: Cortex online -> gono4enko@gmail.com
+2026-07-18 18:46:09: 2026-07-18 18:46:09,926 [cortex] INFO: INGEST: created task cortex-20260718-fea9c7c5 — Avito Gateway: token refresh + webhook
+2026-07-18 18:46:10: 2026-07-18 18:46:10,586 [cortex] INFO: INGEST: created task cortex-20260718-e60f25cd — Chat Agent FSM + dialog memory
+2026-07-18 18:46:11: 2026-07-18 18:46:11,343 [cortex] INFO: INGEST: created task cortex-20260718-7205c9ed — Auto-publishing + scheduler
+2026-07-18 18:46:12: 2026-07-18 18:46:12,356 [cortex] INFO: INGEST: created task cortex-20260718-078fec7a — Analytics + dashboard
+2026-07-18 18:46:13: 2026-07-18 18:46:13,103 [cortex] INFO: INGEST: created task cortex-20260718-2f1f07e5 — LLM moderation for messages
+2026-07-18 18:46:13: 2026-07-18 18:46:13,897 [cortex] INFO: INGEST: created task cortex-20260718-892a3037 — TwentyCRM webhook integration
+2026-07-18 18:46:14: 2026-07-18 18:46:14,599 [cortex] INFO: INGEST: created task cortex-20260718-d9d379bd — Tests + Prometheus + rate-limits
+2026-07-18 18:46:15: 2026-07-18 18:46:15,634 [cortex] INFO: INGEST: created task cortex-20260718-c8c6e0cf — Email + Telegram module tested
+2026-07-18 18:46:23: 2026-07-18 18:46:23,078 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 18:50:10: 2026-07-18 18:50:10,706 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-fea9c7c5 (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:11: 2026-07-18 18:50:11,450 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-e60f25cd (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:12: 2026-07-18 18:50:12,186 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-7205c9ed (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:12: 2026-07-18 18:50:12,927 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-078fec7a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:13: 2026-07-18 18:50:13,710 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-2f1f07e5 (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:14: 2026-07-18 18:50:14,453 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-892a3037 (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:15: 2026-07-18 18:50:15,202 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-d9d379bd (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'cortex-orchestrator'})
+2026-07-18 18:50:41: 2026-07-18 18:50:41,260 [cortex] INFO: DISPATCH: cortex-20260718-fea9c7c5 → hermes-bot (complexity=low)
+2026-07-18 18:50:42: 2026-07-18 18:50:42,018 [cortex] INFO: DISPATCH: cortex-20260718-e60f25cd → kilo-hermes (complexity=low)
+2026-07-18 18:50:43: 2026-07-18 18:50:43,061 [cortex] INFO: DISPATCH: cortex-20260718-7205c9ed → mac-kilo (complexity=low)
+2026-07-18 18:50:44: 2026-07-18 18:50:44,019 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-078fec7a (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'mac-opencode', 'hermes-opencode', 'cortex-orchestrator'})
+2026-07-18 18:50:45: 2026-07-18 18:50:45,431 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-2f1f07e5 (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'mac-opencode', 'hermes-opencode', 'cortex-orchestrator'})
+2026-07-18 18:50:46: 2026-07-18 18:50:46,284 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-892a3037 (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'mac-opencode', 'hermes-opencode', 'cortex-orchestrator'})
+2026-07-18 18:50:47: 2026-07-18 18:50:47,318 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-d9d379bd (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'mac-opencode', 'hermes-opencode', 'cortex-orchestrator'})
+2026-07-18 18:50:48: 2026-07-18 18:50:48,282 [cortex] WARNING: DISPATCH: no matching agent for cortex-20260718-c8c6e0cf (wanted ['hermes-bot', 'kilo-hermes', 'mac-kilo'], available {'mac-opencode', 'hermes-opencode', 'cortex-orchestrator'})
+2026-07-18 19:14:56: 2026-07-18 19:14:56,065 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 19:15:45: 2026-07-18 19:15:45,269 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks
+2026-07-18 19:27:00: 2026-07-18 19:27:00,876 [cortex] INFO: agent-loop state not found at /home/hermes/agent-loop-state.db — assuming no active tasks

@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://kilo.ai/schemas/indexing.json",
+  "title": "Kilo Codebase Indexing Configuration",
+  "description": "Validates the indexing block in kilo.jsonc",
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean",
+      "description": "Enable indexing globally or for this project"
+    },
+    "provider": {
+      "type": "string",
+      "enum": [
+        "openai",
+        "ollama",
+        "openai-compatible",
+        "gemini",
+        "mistral",
+        "vercel-ai-gateway",
+        "aws-bedrock",
+        "bedrock",
+        "openrouter",
+        "voyage"
+      ],
+      "description": "Embedding provider identifier"
+    },
+    "model": {
+      "type": "string",
+      "description": "Embedding model name"
+    },
+    "dimension": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4096,
+      "description": "Embedding vector dimension"
+    },
+    "vectorStore": {
+      "type": "string",
+      "enum": ["lancedb", "qdrant"],
+      "description": "Vector database backend"
+    },
+    "fileExtensions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Limit indexing to these file extensions"
+    },
+    "openai": { "$ref": "#/$defs/openaiProvider" },
+    "openai-compatible": { "$ref": "#/$defs/openaiCompatibleProvider" },
+    "ollama": { "$ref": "#/$defs/ollamaProvider" },
+    "mistral": { "$ref": "#/$defs/mistralProvider" },
+    "gemini": { "$ref": "#/$defs/geminiProvider" },
+    "vercel-ai-gateway": { "$ref": "#/$defs/vercelProvider" },
+    "voyage": { "$ref": "#/$defs/voyageProvider" },
+    "openrouter": { "$ref": "#/$defs/openrouterProvider" },
+    "lancedb": { "type": "object", "additionalProperties": true },
+    "qdrant": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "apiKey": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "searchMinScore": { "type": "number", "minimum": 0, "maximum": 1 },
+    "searchMaxResults": { "type": "integer", "minimum": 1, "maximum": 500 },
+    "embeddingBatchSize": { "type": "integer", "minimum": 1, "maximum": 500 },
+    "scannerMaxBatchRetries": { "type": "integer", "minimum": 0, "maximum": 20 }
+  },
+  "required": ["enabled", "provider", "vectorStore"],
+  "additionalProperties": false,
+  "$defs": {
+    "openaiProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    },
+    "openaiCompatibleProvider": {
+      "type": "object",
+      "properties": {
+        "baseUrl": { "type": "string", "format": "uri" },
+        "apiKey": { "type": "string" }
+      },
+      "required": ["baseUrl"],
+      "additionalProperties": false
+    },
+    "ollamaProvider": {
+      "type": "object",
+      "properties": {
+        "baseUrl": { "type": "string", "format": "uri" }
+      },
+      "required": ["baseUrl"],
+      "additionalProperties": false
+    },
+    "mistralProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    },
+    "geminiProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    },
+    "vercelProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    },
+    "voyageProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    },
+    "openrouterProvider": {
+      "type": "object",
+      "properties": {
+        "apiKey": { "type": "string" },
+        "specificProvider": { "type": "string" }
+      },
+      "required": ["apiKey"],
+      "additionalProperties": false
+    }
+  }
+}
