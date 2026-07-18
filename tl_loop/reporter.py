@@ -6,8 +6,30 @@ from cortex.lib.email import send_email, SMTP_TO
 logger = logging.getLogger(__name__)
 
 async def daily_telegram(tasks_done: int, tasks_active: int, ticks: int):
-    """Send daily one-liner to Andrey via Telegram."""
+    """Send daily brief to Andrey via Telegram."""
     text = f"Cortex Daily: {tasks_done} done, {tasks_active} active, {ticks} ticks"
+
+    # ponytail: add per-project breakdown
+    try:
+        import sys; sys.path.insert(0, "/home/hermes")
+        from cortex.tl_loop.state_store import _cortex_db
+        db = _cortex_db()
+        rows = db.execute(
+            "SELECT project_id, status, COUNT(*) FROM cortex_tasks "
+            "WHERE status NOT IN ('done','failed') "
+            "GROUP BY project_id, status ORDER BY project_id, status"
+        ).fetchall()
+        if rows:
+            projects = {}
+            for r in rows:
+                projects.setdefault(r[0], {})[r[1]] = r[2]
+            text += "\nProjects:"
+            for proj, stats in projects.items():
+                line = f"  {proj}: " + ", ".join(f"{s}={n}" for s, n in sorted(stats.items()))
+                text += "\n" + line
+    except Exception:
+        pass
+
     try:
         import httpx
         bot = os.environ.get("TELEGRAM_BOT_TOKEN", "")
@@ -18,6 +40,7 @@ async def daily_telegram(tasks_done: int, tasks_active: int, ticks: int):
                     json={"chat_id": chat, "text": text})
     except Exception as e:
         logger.warning(f"Daily TG: {e}")
+
 
 async def weekly_email(done: int, failed: int, cost: float):
     """Send weekly digest to Andrey."""
