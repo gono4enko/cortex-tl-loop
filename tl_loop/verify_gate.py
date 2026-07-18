@@ -1,4 +1,4 @@
-"""Verification Gate — real pytest/ruff execution."""
+"""Verification Gate — real pytest/ruff + task-specific verify_command."""
 from __future__ import annotations
 import subprocess, logging, os
 from cortex.tl_loop.schema import Task
@@ -7,7 +7,6 @@ from cortex.tl_loop.state_store import transition, log_event, TaskStatus
 logger = logging.getLogger("verify")
 
 def run_verify(task: Task) -> tuple[bool, str]:
-    """Run real verification: pytest + ruff on task diff."""
     output_lines = []
     all_passed = True
     project_dir = "/home/hermes"
@@ -16,7 +15,26 @@ def run_verify(task: Task) -> tuple[bool, str]:
         if os.path.isdir(pdir):
             project_dir = pdir
 
-    # 1. Ruff check (if python project)
+    # 0. Task verify_command (if set) — ponytail: run before ruff/pytest
+    if task.verify_command:
+        try:
+            r = subprocess.run(
+                task.verify_command, shell=True,
+                capture_output=True, text=True, timeout=300,
+                cwd=project_dir,
+            )
+            output_lines.append(f"$ {task.verify_command[:80]}")
+            output_lines.append(r.stdout[-2000:] or "(no output)")
+            if r.stderr:
+                output_lines.append(r.stderr[-500:])
+            if r.returncode != 0:
+                all_passed = False
+                output_lines.append(f"verify_command FAILED (rc={r.returncode})")
+        except Exception as e:
+            output_lines.append(f"verify_command: {e}")
+            all_passed = False
+
+    # 1. Ruff check
     try:
         r = subprocess.run(
             ["python3", "-m", "ruff", "check", ".", "--select", "E,F,W"],
@@ -31,7 +49,7 @@ def run_verify(task: Task) -> tuple[bool, str]:
     except Exception as e:
         output_lines.append(f"ruff: {e}")
 
-    # 2. Pytest (not slow)
+    # 2. Pytest
     try:
         r = subprocess.run(
             ["python3", "-m", "pytest", "tests/", "-v", "--tb=short", "-m", "not slow"],
@@ -49,7 +67,7 @@ def run_verify(task: Task) -> tuple[bool, str]:
         output_lines.append(f"pytest: {e}")
 
     output = "\n".join(output_lines)
-    
+
     if all_passed:
         transition(task.id, TaskStatus.REVIEWING)
         log_event(task.id, "verify_passed", {"cmd": "ruff+pytest"})
@@ -60,6 +78,6 @@ def run_verify(task: Task) -> tuple[bool, str]:
         else:
             transition(task.id, TaskStatus.BLOCKED)
             log_event(task.id, "escalation", {"reason": "verify failed after max retries"})
-    
+
     logger.info(f"Verify: {task.id[:20]} passed={all_passed}")
     return all_passed, output
