@@ -19,7 +19,7 @@ PRICING = {
 
 
 def _db():
-    conn = sqlite3.connect(str(COST_DB))
+    conn = sqlite3.connect(str(COST_DB), timeout=10)  # ponytail: prevent db lock
     conn.execute("CREATE TABLE IF NOT EXISTS cost_log (ts TEXT, task_id TEXT, model TEXT, "
                  "input_tokens INT, output_tokens INT, cost_usd REAL)")
     return conn
